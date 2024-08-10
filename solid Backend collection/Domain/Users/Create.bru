@@ -1,0 +1,21 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"joel2",
+    "email":"jordach@me.com",
+    "phone":"0629955944",
+    "password":"password123"
+    
+  }
+}

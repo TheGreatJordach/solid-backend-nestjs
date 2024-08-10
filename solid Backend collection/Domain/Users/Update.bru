@@ -1,0 +1,21 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/users/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"joel2",
+    "email":"jordach@me.com",
+    "phone":"0629955944",
+    "password":"password123"
+    
+  }
+}
