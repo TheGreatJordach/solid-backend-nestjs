@@ -1,4 +1,6 @@
 # compiled output
+.env.local
+postgres_data/
 /dist
 /node_modules
 /build
