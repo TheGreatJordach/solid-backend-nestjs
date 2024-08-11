@@ -1,4 +1,5 @@
 import { ValidationPipeOptions } from '@nestjs/common';
+import * as constants from 'node:constants';
 
 export const VALIDATION_PIPE_OPTIONS: ValidationPipeOptions = {
   whitelist: true,
@@ -8,3 +9,6 @@ export const VALIDATION_PIPE_OPTIONS: ValidationPipeOptions = {
     enableImplicitConversion: true,
   },
 };
+export const DEFAULT_PAGE_SIZE = {
+  USER: 10,
+} as const satisfies Record<string, number>;

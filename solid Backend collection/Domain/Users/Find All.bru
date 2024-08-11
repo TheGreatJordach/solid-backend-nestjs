@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: http://localhost:3000/users/
+  url: http://localhost:3000/users/?limit=0&offset=0
   body: none
   auth: none
+}
+
+params:query {
+  limit: 0
+  offset: 0
 }
 
 body:json {
