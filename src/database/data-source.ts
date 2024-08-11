@@ -6,8 +6,9 @@ export default new DataSource({
   host: 'localhost',
   username: 'postgres',
   password: 'postgres',
-  database: 'X-USERS',
+  database: 'THE-EMPLOYEES',
   port: 5434,
   entities: [User],
-  migrations: ['dist/database/migration/*.js'],
+  migrations: ['src/database/migrations/*.js'],
+  migrationsTableName: 'create_User_migration_table',
 });
