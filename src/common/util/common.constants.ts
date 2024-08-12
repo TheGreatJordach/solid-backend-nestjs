@@ -1,5 +1,4 @@
 import { ValidationPipeOptions } from '@nestjs/common';
-import * as constants from 'node:constants';
 
 export const VALIDATION_PIPE_OPTIONS: ValidationPipeOptions = {
   whitelist: true,
